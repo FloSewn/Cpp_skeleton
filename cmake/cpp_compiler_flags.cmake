@@ -18,7 +18,6 @@ endif()
 #===========================================================
 # Compiler FLags                                           
 #===========================================================
-#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 set(
   CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17"
   CACHE STRING "Flags used by the compiler during all build types." FORCE
@@ -30,9 +29,6 @@ if(     CMAKE_CXX_COMPILER_ID STREQUAL "GNU"   )
 elseif( CMAKE_CXX_COMPILER_ID STREQUAL "Intel" )
   string( APPEND MY_CMAKE_CXX_FLAGS   "-DINTEL" )
 endif()
-
-# define coding standards
-#string( APPEND MY_CMAKE_CXX_FLAGS   "-std=c++17"   )
 
 
 #===========================================================
